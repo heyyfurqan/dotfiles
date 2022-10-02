@@ -1,0 +1,9 @@
+{
+    "workbench.colorTheme": "Atom One Dark",
+    "workbench.iconTheme": "vscode-icons",
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 20,
+    "editor.linkedEditing": true,
+    "security.workspace.trust.untrustedFiles": "open"
+}
