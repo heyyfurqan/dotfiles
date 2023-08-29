@@ -113,3 +113,35 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# mslm paste
+alias spoti='LD_PRELOAD=/usr/local/lib/spotify-adblock.so spotify'
+alias jamaat='cd mslm/mslm && ./web/mslm/devrun.sh'
+
+alias gs='git status'
+alias gc='git commit -m'
+alias gca='git add -A && git commit -am '
+alias gb='git branch'
+alias gd='git diff'
+alias gdh='git diff --staged'
+alias gp='git pull'
+alias gr='git remote -v'
+alias gtop='git log --pretty=format: --name-only | sort | uniq -c | sort -rg | head -30'
+alias gg='git grep'
+alias ga='git add -A'
+alias gpa='git pushall'
+
+alias update_all='sudo apt update && sudo apt upgrade -y && sudo apt dist-upgrade -y && sudo apt autoremove -y'
+
+# copy and paste terminal input & output.
+alias pbcopy='xclip -selection clipboard'
+alias pbpaste='xclip -selection clipboard -o'
+
+
+export PATH=$PATH:/usr/local/go/bin
+export GO111MODULE=on
+export GOPATH=~/go
+export GOROOT=/usr/local/go
+export PATH=$PATH:/home/doge/mslm/mslm/node_modules/.bin
+export GOPATH=~/go
+export PATH=$PATH:$GOROOT/bin
+export PATH=$PATH:$GOPATH/bin
