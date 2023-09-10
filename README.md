@@ -6,10 +6,12 @@ Follow the steps in order:
 
 # OS
 
-My OS of choice is [POP!_OS](https://pop.system76.com/), download and install it.
+My OS of choice is [POP!\_OS](https://pop.system76.com/), download and install it.
 
 # [Optional] Configuring the GRUB Menu
- To configure the boot menu in case of dual boot, type the following commands in terminal --> [video for reference](https://youtu.be/vdxMB6qD5rc?feature=shared&t=589):
+
+To configure the boot menu in case of dual boot, type the following commands in terminal --> [video for reference](https://youtu.be/vdxMB6qD5rc?feature=shared&t=589):
+
 ```
 sudo fdisk -l	//get a list of all partitions
 sudo mkdir /mnt/windows
@@ -20,4 +22,7 @@ sudo nano /boot/efi/leader/loader.conf	// edit config files, create a new line a
 `timeout 5`	//5 secs waiting time
 `console-mode max`	//save the file and exit
 ```
+
 If you login next time, you'll see a GRUB menu.
+
+# Must-have Apps
