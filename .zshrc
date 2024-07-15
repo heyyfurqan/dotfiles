@@ -115,7 +115,28 @@ source $ZSH/oh-my-zsh.sh
 
 # mslm paste
 alias spoti='LD_PRELOAD=/usr/local/lib/spotify-adblock.so spotify'
-alias jamaat='cd mslm/mslm && ./web/mslm/devrun.sh'
+alias web='cd ~ && cd mslm && ./web/mslm/devrun.sh'
+alias be='cd ~ && cd mslm && ./be/devrun.sh'
+alias fmt='cd ~ && cd mslm && ./bin/web/fmt.sh'
+alias api='cd ~ && cd mslm && ./be/fe_api/cmd/devrun.sh'
+alias spice='cd ~ && cd mslm && ./be/spicedb/cmd/devrun.sh'
+alias file='cd ~ && cd mslm && ./be/file_api/cmd/devrun.sh'
+alias clean='cd ~ && cd mslm && ./bin/clean-devrun.sh'
+alias media='cd ~ && cd mslm && ./be/media_processor/cmd/devrun.sh'
+alias scms='cd ~ && cd mslm && ./be/scms_api/cmd/devrun.sh'
+alias gofmt='cd ~ && cd mslm && ./bin/go/fmt.sh'
+alias cleanall='cd ~ && cd Documents && ./kill_ports.sh'
+alias nyan='cd ~ && cd Documents && ./nyan.sh'
+alias stash='git stash'
+alias pop='git stash pop'
+alias main='git checkout main'
+alias platform='git checkout platform-work'
+alias sync='cd ~ && cd mslm && ./be/fe_api/codes-sync.sh'
+alias ms='cd ~ && cd mslm && ./be/msql/migration/all.sh | psql -p 5432 -U mslm -d mslm'
+alias db='cd ~ && cd Downloads && sh ./DbVisualizer/dbvisgui.sh'
+
+alias vpn='warp-cli connect'
+alias vpnoff='warp-cli disconnect'
 
 alias gs='git status'
 alias gc='git commit -m'
@@ -141,7 +162,8 @@ export PATH=$PATH:/usr/local/go/bin
 export GO111MODULE=on
 export GOPATH=~/go
 export GOROOT=/usr/local/go
-export PATH=$PATH:/home/doge/mslm/mslm/node_modules/.bin
+export PATH=$PATH:/home/mslm/mslm/node_modules/.bin
 export GOPATH=~/go
 export PATH=$PATH:$GOROOT/bin
 export PATH=$PATH:$GOPATH/bin
+. "$HOME/.cargo/env"
